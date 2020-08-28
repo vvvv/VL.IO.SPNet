@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="C5LegXwA8A1P8QWLwjTBbn" LanguageVersion="2020.1.7.184" Version="0.128">
+  <NugetDependency Id="VhFLov9HG1mLE7oEUqDJis" Location="VL.CoreLib" Version="2020.1.7" />
+  <Patch Id="PNtzaCoevNcLIoCThabM5U">
+    <Canvas Id="IopBiAmehy6Mw0WeRHrFpb" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="ANMYjabM9CAOAmvpEjG02w">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="GOUhuE3n9GtNTlIWXuEXOp">
+        <Canvas Id="DnhT4tD97RaNoFGezxzX4x" CanvasType="Group">
+          <Node Bounds="576,390,63,19" Id="IlPzuXgPws6Mpaun1JwsHx">
+            <p:NodeReference LastCategoryFullName="IO.Socket" LastSymbolSource="VL.CoreLib.IO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="UdpServer" />
+            </p:NodeReference>
+            <Pin Id="I6eZWAhumQtP0J9NhY78jC" Name="Local Port" Kind="InputPin" />
+            <Pin Id="Dk8HGpVThyQOvlwnsvk5EM" Name="Enabled" Kind="InputPin" />
+            <Pin Id="BLeTHOZvQafMT0kNBhvDyR" Name="Output" Kind="OutputPin" />
+            <Pin Id="V6zsS11b1hjPtEPl5iP1Fd" Name="Address" Kind="OutputPin" />
+            <Pin Id="TgeX3emE74SN9i3AgbVuhS" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KOy62qrh1bBLZMl5ilr0Iz" Comment="Local Port" Bounds="578,352,45,15" ShowValueBox="true" isIOBox="true" Value="37373">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ANh8sP6FRWXL4p3xQIJMAY" Comment="On Data" Bounds="636,443,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="353,291,65,19" Id="RmeujKYqQJwOL6UI4u6fvr">
+            <p:NodeReference LastCategoryFullName="IO.Net" LastSymbolSource="VL.CoreLib.IO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="IPs (Wifi)" />
+            </p:NodeReference>
+            <Pin Id="UN0sYuvSfdjN3IScwO5QOS" Name="Update" Kind="InputPin" />
+            <Pin Id="HtP8kf5LYndNJxKzIYZ0Cp" Name="Address" Kind="OutputPin" />
+            <Pin Id="FRkNGW5dPAeL4afxTJTvJE" Name="Name" Kind="OutputPin" />
+            <Pin Id="GYGDZE14LeAPSbe0ZdG4Qm" Name="Description" Kind="OutputPin" />
+            <Pin Id="N5CqfYKimzLPVWjhduvvO1" Name="Is Up" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UDyJGIXdKTDQdjRY2kFNTV" Comment="Address" Bounds="355,343,82,34" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Node Bounds="576,511,70,19" Id="Gx6OnXH7LbfQJevRMkwa5Y">
+            <p:NodeReference LastCategoryFullName="IO.SPNet" LastSymbolSource="VL.IO.SPNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="IO" />
+              <CategoryReference Kind="Category" Name="SPNet" />
+              <Choice Kind="OperationCallFlag" Name="UpackSPNet" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="MvpMii6dhHcQHq8J7nV64C" Name="Input" Kind="InputPin" />
+            <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="651,628,44,26" Id="GGB2bJQkkh1OcBSXwRufKs">
+            <p:NodeReference LastCategoryFullName="IO.SPNet.Camera" LastSymbolSource="VL.IO.SPNet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Camera" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+              <CategoryReference Kind="RecordType" Name="Camera" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="SPNet" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+            </p:NodeReference>
+            <Pin Id="Nsti4YNwXr3OnIoKoSjs8c" Name="Input" Kind="StateInputPin" />
+            <Pin Id="C0ADdTt0WWKPa2U2BfBc7X" Name="Position" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="576,580,80,19" Id="LZ1piYwutlKLdsfmv76CuW">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
+            </p:NodeReference>
+            <Pin Id="MgnMwiKcNbGL1HFLopVe4C" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Mom37DAWFYvMQkKDoN8cVF" Name="Default Value" Kind="InputPin" />
+            <Pin Id="Jw7h4DwlMdWMo6V0XHpzPB" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Lbez6lranisOEWXhmY2PxF" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Ih6glO4tllmPcCuJqpSm2X" Comment="Position" Bounds="653,694,35,43" ShowValueBox="true" isIOBox="true" />
+        </Canvas>
+        <Patch Id="HDXKPj5tdRsMiBnh4RGJgY" Name="Create" />
+        <Patch Id="T1PPIhmpHsIPn6PUCWU5DF" Name="Update" />
+        <ProcessDefinition Id="SLuZvEAGpY9Nn5pM1nxlg9">
+          <Fragment Id="AdOIlswjMSTLNCxCT0zg3m" Patch="HDXKPj5tdRsMiBnh4RGJgY" Enabled="true" />
+          <Fragment Id="P358hHUS13RQE5vr5zc3q3" Patch="T1PPIhmpHsIPn6PUCWU5DF" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="GEpEOblrojSOhrM86q7ZWv" Ids="KOy62qrh1bBLZMl5ilr0Iz,I6eZWAhumQtP0J9NhY78jC" />
+        <Link Id="HYHKeBIZo38P2d4Q0rj0Fu" Ids="TgeX3emE74SN9i3AgbVuhS,ANh8sP6FRWXL4p3xQIJMAY" />
+        <Link Id="KHwEgdIQYKWMPHPQ0nRBVU" Ids="HtP8kf5LYndNJxKzIYZ0Cp,UDyJGIXdKTDQdjRY2kFNTV" />
+        <Link Id="JSia91lEuDDMr0nG0f0spQ" Ids="BLeTHOZvQafMT0kNBhvDyR,MvpMii6dhHcQHq8J7nV64C" />
+        <Link Id="FZHAuU7jNOfNIXBCNJTmBj" Ids="KbEh0FqXxLLL1oCaBj9K5m,MgnMwiKcNbGL1HFLopVe4C" />
+        <Link Id="VvEXsxP0m1kMKW965E5GDh" Ids="Lbez6lranisOEWXhmY2PxF,Nsti4YNwXr3OnIoKoSjs8c" />
+        <Link Id="F0JZ7SATHLTN32nGWDjB5L" Ids="C0ADdTt0WWKPa2U2BfBc7X,Ih6glO4tllmPcCuJqpSm2X" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="NKEjV7DX9OZQcDkcRcsKsF" Location="VL.Skia" Version="2020.1.7" />
+  <NugetDependency Id="QW2ecl4NVziPjBzr4JuPuI" Location="VL.IO.OSC" Version="0.0.0.0" />
+  <NugetDependency Id="QMcDuzgo0IvQSMHfo7jtc6" Location="VL.IO.SPNet" Version="0.0.0.0" />
+</Document>
