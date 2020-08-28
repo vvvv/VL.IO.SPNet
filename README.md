@@ -1,5 +1,5 @@
 # VL.IO.SPNet
-Receive data via the [SPNet](http://manual.stageprecision.com/) protocol in VL.
+Receive data via the [SPNet](https://git.stageprecision.com/stage-precision-public/spnet) protocol in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
