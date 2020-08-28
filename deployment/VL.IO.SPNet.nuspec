@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.SPNet</id>
+	<version>1.0.0-pre</version>
+    <title>VL.IO.SPNet</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.IO.SPNet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Receive data via the SPNet protocol in VL.</summary>
+	<description>Receive data via the SPNet protocol in VL.</description>
+    <tags>VL, spnet, stageprecision, tracking, camera</tags>
+    <license type="expression">LGPL-3.0-only</license>
+    <icon>nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+    <file src="..\nugeticon.png" target="" />
+  </files>
+</package>
