@@ -57,7 +57,10 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="MvpMii6dhHcQHq8J7nV64C" Name="Input" Kind="InputPin" />
-            <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Result" Kind="OutputPin" />
+            <Pin Id="GHpq7dM3Kg8MzoEvhpou4p" Name="Protocol Version" Kind="OutputPin" />
+            <Pin Id="V0L7dm5hjAtQMyrNMo5Phz" Name="Sender ID" Kind="OutputPin" />
+            <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Cameras" Kind="OutputPin" />
+            <Pin Id="OWdU041GvWcODifhYxJtvE" Name="Tracked Points" Kind="OutputPin" />
           </Node>
           <Node Bounds="651,628,44,26" Id="GGB2bJQkkh1OcBSXwRufKs">
             <p:NodeReference LastCategoryFullName="IO.SPNet.Camera" LastSymbolSource="VL.IO.SPNet.vl">
@@ -69,7 +72,21 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="Nsti4YNwXr3OnIoKoSjs8c" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IzYRaDnE8SHMRL9IowDjbN" Name="ID" Kind="OutputPin" />
+            <Pin Id="SQ5mL6Y0CLvMyryfqO9Q4O" Name="Name" Kind="OutputPin" />
+            <Pin Id="OEpoeWmR4YAN1uk8gQPHLi" Name="Horizontal FOV" Kind="OutputPin" />
+            <Pin Id="IJ5URl88gmRMgemBbDyX0g" Name="Aspect" Kind="OutputPin" />
+            <Pin Id="CT1xSFaotcRLId0DzZwowl" Name="Focus" Kind="OutputPin" />
+            <Pin Id="GN9X0sExzPdO98fXp0k0Dp" Name="Zoom" Kind="OutputPin" />
+            <Pin Id="JkmBH7DfUw5NyTaPGPzkKI" Name="K1 lens distortion" Kind="OutputPin" />
+            <Pin Id="P98vxxPiwc4NrcoNQ6mCcp" Name="K2 lens distortion" Kind="OutputPin" />
+            <Pin Id="FMyhtNUVGOWPDMAStOZggO" Name="Cx horizontal" Kind="OutputPin" />
+            <Pin Id="He9A1JTEJk9LEib0Er5QVp" Name="Cx vertical" Kind="OutputPin" />
+            <Pin Id="Vkqi2HImrjzNPZuMjtXIV6" Name="Panel Width" Kind="OutputPin" />
+            <Pin Id="AQ1M7D56T5SOPlro4TOnro" Name="Rotation" Kind="OutputPin" />
             <Pin Id="C0ADdTt0WWKPa2U2BfBc7X" Name="Position" Kind="OutputPin" />
+            <Pin Id="R07YzgWmmgBML3frvCVmkC" Name="Quaternion" Kind="OutputPin" />
+            <Pin Id="ALPQsGvullDLufknh9M8uh" Name="Visible" Kind="OutputPin" />
           </Node>
           <Node Bounds="576,580,80,19" Id="LZ1piYwutlKLdsfmv76CuW">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
@@ -81,7 +98,33 @@
             <Pin Id="Jw7h4DwlMdWMo6V0XHpzPB" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Lbez6lranisOEWXhmY2PxF" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ih6glO4tllmPcCuJqpSm2X" Comment="Position" Bounds="653,694,35,43" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="779,522" Id="MAnkDp32hzELdDc9yBMLpi">
+            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="S+H" />
+              <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="PNgzqgq1r4ULj3NQktbY2l" Name="Value" Kind="InputPin" />
+            <Pin Id="J5BOentSkw2N6TQaX6kwTh" Name="Sample" Kind="InputPin" />
+            <Pin Id="DTCPnssMDM5MgCcvKQVEkv" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="C7cZkMR1On9NWdz2sTf3yh" Comment="Sample" Bounds="854,457,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ON9UhjIDdzyQPcZZZuVpXJ" Comment="" Bounds="459,598,53,110" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:ValueBoxSettings>
+              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Sjr78NvgeQmMU9sruFcsVJ" Comment="Horizontal FOV" Bounds="689,703,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="O8k9CozvQeMMiIYurR0hMx" Comment="Aspect" Bounds="716,729,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EJ1j9ryZHF6NZZptHd7IaF" Comment="Rotation" Bounds="870,732,35,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FbigIjcXyDlPXAclGICEBk" Comment="Position" Bounds="944,759,35,43" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="HDXKPj5tdRsMiBnh4RGJgY" Name="Create" />
         <Patch Id="T1PPIhmpHsIPn6PUCWU5DF" Name="Update" />
@@ -92,10 +135,16 @@
         <Link Id="GEpEOblrojSOhrM86q7ZWv" Ids="KOy62qrh1bBLZMl5ilr0Iz,I6eZWAhumQtP0J9NhY78jC" />
         <Link Id="HYHKeBIZo38P2d4Q0rj0Fu" Ids="TgeX3emE74SN9i3AgbVuhS,ANh8sP6FRWXL4p3xQIJMAY" />
         <Link Id="KHwEgdIQYKWMPHPQ0nRBVU" Ids="HtP8kf5LYndNJxKzIYZ0Cp,UDyJGIXdKTDQdjRY2kFNTV" />
-        <Link Id="JSia91lEuDDMr0nG0f0spQ" Ids="BLeTHOZvQafMT0kNBhvDyR,MvpMii6dhHcQHq8J7nV64C" />
         <Link Id="FZHAuU7jNOfNIXBCNJTmBj" Ids="KbEh0FqXxLLL1oCaBj9K5m,MgnMwiKcNbGL1HFLopVe4C" />
         <Link Id="VvEXsxP0m1kMKW965E5GDh" Ids="Lbez6lranisOEWXhmY2PxF,Nsti4YNwXr3OnIoKoSjs8c" />
-        <Link Id="F0JZ7SATHLTN32nGWDjB5L" Ids="C0ADdTt0WWKPa2U2BfBc7X,Ih6glO4tllmPcCuJqpSm2X" />
+        <Link Id="IjAT9GtNTOzO6MqPuLeqxR" Ids="BLeTHOZvQafMT0kNBhvDyR,PNgzqgq1r4ULj3NQktbY2l" />
+        <Link Id="Q7217cP3csyNJW4rSI3VD2" Ids="C7cZkMR1On9NWdz2sTf3yh,J5BOentSkw2N6TQaX6kwTh" />
+        <Link Id="IUJ2EtU9clrOKXeduvkgcE" Ids="BLeTHOZvQafMT0kNBhvDyR,ON9UhjIDdzyQPcZZZuVpXJ" />
+        <Link Id="PAehCZhZhbZLDJ3AsUymHY" Ids="BLeTHOZvQafMT0kNBhvDyR,MvpMii6dhHcQHq8J7nV64C" />
+        <Link Id="ClKfm6QPkvQLtC42i8447I" Ids="OEpoeWmR4YAN1uk8gQPHLi,Sjr78NvgeQmMU9sruFcsVJ" />
+        <Link Id="HGqx850jDPRPFilXbIWoW6" Ids="IJ5URl88gmRMgemBbDyX0g,O8k9CozvQeMMiIYurR0hMx" />
+        <Link Id="U1wwWbLwz6mNRVMJGrX1id" Ids="AQ1M7D56T5SOPlro4TOnro,EJ1j9ryZHF6NZZptHd7IaF" />
+        <Link Id="HnKrBYo8US3OAsKFRzdITs" Ids="C0ADdTt0WWKPa2U2BfBc7X,FbigIjcXyDlPXAclGICEBk" />
       </Patch>
     </Node>
   </Patch>
