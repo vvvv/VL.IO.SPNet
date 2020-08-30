@@ -59,9 +59,10 @@
             <Pin Id="MvpMii6dhHcQHq8J7nV64C" Name="Input" Kind="InputPin" />
             <Pin Id="GHpq7dM3Kg8MzoEvhpou4p" Name="Protocol Version" Kind="OutputPin" />
             <Pin Id="V0L7dm5hjAtQMyrNMo5Phz" Name="Sender ID" Kind="OutputPin" />
-            <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Cameras" Kind="OutputPin" />
+            <Pin Id="TE1fjnkXLNNLuXjGODiuJe" Name="Rigid Bodies" Kind="OutputPin" />
             <Pin Id="OWdU041GvWcODifhYxJtvE" Name="Tracked Points" Kind="OutputPin" />
             <Pin Id="M8G3mI2xGFmMgryIW5f0ce" Name="Movables" Kind="OutputPin" />
+            <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Cameras" Kind="OutputPin" />
           </Node>
           <Node Bounds="651,628,44,26" Id="GGB2bJQkkh1OcBSXwRufKs">
             <p:NodeReference LastCategoryFullName="IO.SPNet.Camera" LastSymbolSource="VL.IO.SPNet.vl">
