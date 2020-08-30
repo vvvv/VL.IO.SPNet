@@ -61,6 +61,7 @@
             <Pin Id="V0L7dm5hjAtQMyrNMo5Phz" Name="Sender ID" Kind="OutputPin" />
             <Pin Id="KbEh0FqXxLLL1oCaBj9K5m" Name="Cameras" Kind="OutputPin" />
             <Pin Id="OWdU041GvWcODifhYxJtvE" Name="Tracked Points" Kind="OutputPin" />
+            <Pin Id="M8G3mI2xGFmMgryIW5f0ce" Name="Movables" Kind="OutputPin" />
           </Node>
           <Node Bounds="651,628,44,26" Id="GGB2bJQkkh1OcBSXwRufKs">
             <p:NodeReference LastCategoryFullName="IO.SPNet.Camera" LastSymbolSource="VL.IO.SPNet.vl">
@@ -98,29 +99,6 @@
             <Pin Id="Jw7h4DwlMdWMo6V0XHpzPB" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Lbez6lranisOEWXhmY2PxF" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="779,522" Id="MAnkDp32hzELdDc9yBMLpi">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="S+H" />
-              <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="PNgzqgq1r4ULj3NQktbY2l" Name="Value" Kind="InputPin" />
-            <Pin Id="J5BOentSkw2N6TQaX6kwTh" Name="Sample" Kind="InputPin" />
-            <Pin Id="DTCPnssMDM5MgCcvKQVEkv" Name="Value" Kind="OutputPin" />
-          </Node>
-          <Pad Id="C7cZkMR1On9NWdz2sTf3yh" Comment="Sample" Bounds="854,457,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="ON9UhjIDdzyQPcZZZuVpXJ" Comment="" Bounds="459,598,53,110" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:ValueBoxSettings>
-              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="Sjr78NvgeQmMU9sruFcsVJ" Comment="Horizontal FOV" Bounds="689,703,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="O8k9CozvQeMMiIYurR0hMx" Comment="Aspect" Bounds="716,729,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="EJ1j9ryZHF6NZZptHd7IaF" Comment="Rotation" Bounds="870,732,35,43" ShowValueBox="true" isIOBox="true" />
@@ -137,9 +115,6 @@
         <Link Id="KHwEgdIQYKWMPHPQ0nRBVU" Ids="HtP8kf5LYndNJxKzIYZ0Cp,UDyJGIXdKTDQdjRY2kFNTV" />
         <Link Id="FZHAuU7jNOfNIXBCNJTmBj" Ids="KbEh0FqXxLLL1oCaBj9K5m,MgnMwiKcNbGL1HFLopVe4C" />
         <Link Id="VvEXsxP0m1kMKW965E5GDh" Ids="Lbez6lranisOEWXhmY2PxF,Nsti4YNwXr3OnIoKoSjs8c" />
-        <Link Id="IjAT9GtNTOzO6MqPuLeqxR" Ids="BLeTHOZvQafMT0kNBhvDyR,PNgzqgq1r4ULj3NQktbY2l" />
-        <Link Id="Q7217cP3csyNJW4rSI3VD2" Ids="C7cZkMR1On9NWdz2sTf3yh,J5BOentSkw2N6TQaX6kwTh" />
-        <Link Id="IUJ2EtU9clrOKXeduvkgcE" Ids="BLeTHOZvQafMT0kNBhvDyR,ON9UhjIDdzyQPcZZZuVpXJ" />
         <Link Id="PAehCZhZhbZLDJ3AsUymHY" Ids="BLeTHOZvQafMT0kNBhvDyR,MvpMii6dhHcQHq8J7nV64C" />
         <Link Id="ClKfm6QPkvQLtC42i8447I" Ids="OEpoeWmR4YAN1uk8gQPHLi,Sjr78NvgeQmMU9sruFcsVJ" />
         <Link Id="HGqx850jDPRPFilXbIWoW6" Ids="IJ5URl88gmRMgemBbDyX0g,O8k9CozvQeMMiIYurR0hMx" />
